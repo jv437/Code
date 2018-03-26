@@ -26,17 +26,15 @@ get_color(touching_state):
 		is_used[4]
 		if state_color == 0;
 			is_used[0] = True; 
-		if state_color == 1;
+		else if state_color == 1;
 			is_used[1] = True; 
-		if state_color == 2;
+		else if state_color == 2;
 			is_used[2] = True; 
-		if state_color == 3;
-			is_used[3] = True; 
-	count = 0	
+		else if state_color == 3;
+			is_used[3] = True; 	
 	For color in is_used:		
 		if(False):
-			return count
-		count++
+			return color
 
 				
 			
