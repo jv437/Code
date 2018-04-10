@@ -1,0 +1,15 @@
+Function CheckColor(ccColor As Integer, ccState As String)
+	Dim ccP1, ccP2 As Integer
+	For ccP1 = 1 To AdjoinStateArrayCount
+		If AdjoinStateArrat(ccP1, 0) = ccState Then
+			For ccP2 = 1 To StateCount
+				If StatesPlus(ccP2, 2) = ccColor Then
+					Return False
+				End If
+			Next
+		End If
+	Next
+	Return True
+End Function
+
+'This is what was on the board during class on April 9th
